@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>ÖZGEÇMİŞ SAYFASI</title>
-    <link rel="stylesheet" href="styleözgeçmiş.css">
+    <title>LOGİN SAYFASI</title>
+    <link rel="stylesheet" href="stylelog.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -16,7 +16,7 @@
                 <a href="#">Roham Rasouli</a>
             </div>
             <div class="logo3">
-                <a href="#">Sakarya üniversitesi Bilgisayar Mühendisliği</a>
+                <a href="#">Sakarya Üniversitesi Bilgisayar Mühendisliği</a>
             </div>
             
         </div>
@@ -25,7 +25,7 @@
         <div class="navbar2">
             <UL>
                 <li><a href="index.html">Hakkımda</a></li>
-                <li><a href="login.html">Kayıt</a></li>                                
+                <li><a href="Login.html" class="active">Kayıt</a></li>                                
                 <li><a href="Şehrimiz.html">Şehrim</a></li>
                 <li><a href="Takımımız.html">Takımımız</a></li>
                 <li><a href="İlgi.html">İlgi Alanım</a></li>
@@ -41,37 +41,37 @@
             <a href="#"><img src="BEN.jpg" alt=""></a>
         </div>
         <div class="btn btn_1">
-            <a href="Özgeçmiş.html" class="active">Özgeçmiş</a>
+            <a href="Özgeçmiş.html">Özgeçmiş</a>
         </div>
 
-        
+        <br><br>
 
-        
-        <h1>EĞİTİM KARİYERİM</h1>
-        <br>
-        <div class="kariyer">
-        <li>Hemmat İLKÖĞRETİM OKULU(TABRIZ) = 2009-2011</li>
-        <br>
-        <li>Rouzbeh İLKÖĞRETİM OKULU(TABRIZ) = 2011-2013</li>
-        <br>
-        <li>nemuneh dolati ORTAOKULU(TABRIZ) = 2013-2016</li>
-        <br>
-        <li>PAJUHESH LİSESİ(TABRIZ) = 2016-2020</li>
-        <br>
-        <li><strong>SAKARYA ÜNİVERSİTESİ(BİLGİSAYAR MÜHENDİSLİĞİ) = 2021</strong></li>
-        </div>    
-        
-        
+        <form action="login.php" method="post">
+            
+          
+            <div class="container">
+              <label for="username"><b>Kullanıcı Adı</b></label>
+              <input  required type="email" placeholder="Kullanıcı Adını Giriniz" name="uname" required>
+          
+              <label for="sifre"><b>Şifre</b></label>
+              <input type="password" placeholder="Şifrenizi Giriniz" name="psw" required>
+          
+              <button type="submit">Login</button>
+              
+            </div>
+          
+            <div class="container" style="background-color:#f1f1f1">
+            <button type="button" class="cancelbtn">Cancel</button>
+              
+            </div>
+        </form>
 
-        
+
 
                 
     </div>
 
-    <div class="container2">
-
-
-    </div>
+    
 
 </body>
 </html>

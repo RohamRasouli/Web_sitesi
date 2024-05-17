@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İLETİŞİM SAYFASI</title>
+    <link rel="stylesheet" href="stylei.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="İletisim.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">İLETİŞİM</a>
+            </div>
+            
+        </div>
+        <div class="navbar2">
+            <UL>
+                <li><a href="index.html">Hakkımda</a></li>
+                <li><a href="login.html">Kayıt</a></li>
+                <li><a href="Şehrimiz.html">Şehrim</a></li>
+                <li><a href="Takımımız.html">Takımımız</a></li>
+                <li><a href="İlgi.html">İlgi Alanım</a></li>
+                <li><a href="İletişim.html"  class="active">İletişim</a></li>
+            </UL>
+        </div> 
+        <div class="logo1">
+            <a href="#"><img src="nptlogo.png" alt=""></a>
+        </div>
+
+        <div class="logo2">
+            <a href="#"><img src="AD.PNG" alt=""></a>
+        </div>
+
+        <div class="btn btn_1">
+            <a href="Özgeçmiş.html">Özgeçmiş</a>
+        </div>
+
+        
+
+        
+        
+        
+        <section class="sectionform">
+        <form class="iletisimformu" id="formTest" method="post" action="iletisim2.php">
+
+          <table>
+          <tr>
+            <td><label for="txtName">İsim<span class="required">*</span></label></td>
+            <td><input type="text" id="txtName" name="name"></td>
+            <td id="elmNameError" class="errorMsg">&nbsp;</td>
+          </tr>
+          
+          <tr>
+            <td style=" margin-left:1000px"><label for="txtCinsiyet">Cinsiyet<span class="required">*</span></label></td>
+            <td><input type="radio" name="cinsiyet" value="erkek">Erkek </td>
+            <td><input type="radio" name="cinsiyet" value="kadın">Kadın </td>
+          </tr>
+
+          <tr>
+            <td><label for="txtAddress">Adres</label></td>
+            <td><input type="text" id="txtAddress" name="address"></td>
+            <td id="elmAddressError" class="errorMsg">&nbsp;</td>
+          </tr>
+          <tr>
+            <td><label for="txtZipcode">Alan Kodu<span class="required">*</span></label></td>
+            <td><input type="text" id="txtZipcode" name="zipcode"></td>
+            <td id="elmZipcodeError" class="errorMsg">&nbsp;</td>
+          </tr>
+          
+          
+          
+          <tr>
+            <td><label for="txtPhone">Phone<span class="required">*</span></label></td>
+            <td><input type="text" id="txtPhone" name="phone"></td>
+            <td id="elmPhoneError" class="errorMsg">&nbsp;</td></tr>
+          <tr>
+            <td><label for="txtEmail">Email<span class="required">*</span></label></td>
+            <td><input type="text" id="txtEmail" name="email"></td>
+            <td id="elmEmailError" class="errorMsg">&nbsp;</td></tr>
+          
+          <tr>
+            <td>&nbsp;</td>
+            <td><input type="submit" value="GÖNDER" id="btnSubmit">&nbsp;
+                <input type="reset" value="TEMİZLE" id="btnReset"></td>
+            <td>&nbsp;</td></tr>
+          </table>
+        </form>
+      </section>
+</div>
+        
+       
+    
+</body>
+</html>
